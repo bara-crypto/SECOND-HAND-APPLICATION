@@ -27,6 +27,11 @@ export class UploadData {
     return control?.invalid && (control?.dirty || control?.touched);
   }
 
+  get isInvalid2() {
+    const control = this.userForm.get('lastname');
+    return control?.invalid && (control?.dirty || control?.touched);
+  }
+
   
   inputValue = signal('');
   
