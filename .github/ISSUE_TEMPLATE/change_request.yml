@@ -1,0 +1,36 @@
+name: Change Request
+description: Request a new change or modification
+title: "[CR]: "
+labels: ["change-request"]
+body:
+  - type: input
+    id: requester
+    attributes:
+      label: Requester Name
+      placeholder: Enter your name
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Change Description
+      placeholder: Describe the change required
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for Change
+      placeholder: Why is this change needed?
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
