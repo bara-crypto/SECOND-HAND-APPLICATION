@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap');
+
+
+:host
+{
+    --gold: gold;
+    --fs: 2rem;
+    --ff: "Playwrite AT", cursive;
+    
+}
+
+.categories
+{
+    color: var(--gold);
+    font-size: var(--fs);
+    font-family: var(--ff);
+}

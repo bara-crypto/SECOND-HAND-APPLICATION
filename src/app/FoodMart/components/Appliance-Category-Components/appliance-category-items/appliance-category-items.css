@@ -1,0 +1,102 @@
+
+/*
+@import 'swiper/swiper-bundle.css';
+
+.brand-carousel .card
+{
+    width: 40rem;
+}
+
+.brand-carousel .card .row
+{
+    width: 40rem;
+}
+
+*/
+
+.brand-carousel {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.custom-card-img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.swiper-slide .card {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide .card:hover {
+  transform: translateY(-5px);
+}
+
+
+/*   2 image at a time */
+
+.brand-carousel .col-4 {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.brand-carousel .col-8 {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.custom-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.brand-carousel .card {
+  padding: 1.5rem !important; 
+}
+
+swiper-slide .card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+
+
+/* Tablet and Desktop (2 cards side-by-side) */
+@media (min-width: 768px) {
+  .custom-card-img {
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+/* Mobile Devices (1 card, stacked layout) */
+@media (max-width: 767px) {
+  .brand-carousel .row {
+    flex-direction: column; /* Stack image on top of text */
+    text-align: center;
+  }
+  
+  .brand-carousel .col-4, 
+  .brand-carousel .col-8 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .custom-card-img {
+    height: 200px; /* Make image bigger on mobile since it's now full-width */
+    margin-bottom: 15px;
+  }
+  
+  .card-body {
+    padding-bottom: 15px !important;
+  }
+}
+
+

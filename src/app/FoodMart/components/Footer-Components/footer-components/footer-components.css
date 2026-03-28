@@ -1,0 +1,20 @@
+.social-links .btn:hover{
+    background-color: rgba(31, 30, 30, 0.7);
+    color: white;
+    
+}
+
+.row-aligned {
+  display: flex;
+  justify-content: space-between; /* spread items across */
+  align-items: flex-start;        /* align vertically at top */
+  flex-wrap: wrap;
+}
+
+.row-aligned > .col-lg-3 {
+  margin-right: auto; /* push this first div to the left */
+}
+
+.row-aligned > .col-md-2 {
+  margin-left: 10px;  /* optional spacing between right-side divs */
+}

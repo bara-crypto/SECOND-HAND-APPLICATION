@@ -1,0 +1,5 @@
+.card-body h5{
+    font-family: var(--heading-font);
+    color: var(--dark-color);
+    font-weight: 700;
+}

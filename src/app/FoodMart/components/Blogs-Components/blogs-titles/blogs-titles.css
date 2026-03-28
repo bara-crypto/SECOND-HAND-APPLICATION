@@ -1,0 +1,16 @@
+
+
+.card {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+
+.post-item:hover {
+  transform: scale(1.15) !important; 
+  opacity: 1 !important;
+  z-index: 10; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}

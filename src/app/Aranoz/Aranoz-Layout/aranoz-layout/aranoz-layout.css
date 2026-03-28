@@ -1,0 +1,67 @@
+.search-box-animation-given
+{
+    display: none;
+}
+.search-box-animation-given.active
+{
+    display: block;
+}
+
+::ng-deep .ngx-slider .ngx-slider-pointer {
+  width: 20px !important;       /* Increase/Decrease width */
+  height: 20px !important;      /* Increase/Decrease height */
+  top: -8px !important;        /* Adjust this to re-center the ball on the line */
+  border-radius: 50%;           /* Keeps it a circle */
+  background-color: rgba(127, 187, 255, 0.525);
+  box-shadow: 2px 2px 2px solid black;
+}
+
+/* 2. Optional: Remove the inner "dot" if it looks weird after resizing */
+::ng-deep .ngx-slider .ngx-slider-pointer:after {
+  display: none;
+}
+
+/* 3. Handle the 'Active' state (when clicked/dragged) 
+::ng-deep .ngx-slider .ngx-slider-pointer.ngx-slider-active:after {
+  
+}
+*/
+
+.button-contactForm
+{
+    border-radius: 2rem;
+    background-color: rgba(127, 187, 255);
+}
+
+.button-contractFormDiv
+{
+    align-items: center;
+    justify-content: end;
+}
+
+@media (max-width: 576px) {
+    .button-contractFormDiv
+    {
+        justify-content: start;
+    }
+    
+}
+
+/* Container for the navigation buttons */
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+
+    background-color: #fff;
+}
+
+.owl-prev:hover, .owl-next:hover {
+    
+    background: transparent !important; /* Dark hover effect */
+    background-color: #fff;
+    transform: translate(5px);
+}

@@ -1,0 +1,379 @@
+
+
+<div class="page">
+  <aside class="sidebar" id="sidebar-id">
+    <div class="sidebar-top">
+      <div class="icon-link">
+        <button class="menu-icon" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" min-width="15" max-width="15"
+            fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0" />
+          </svg>
+        </button>
+      </div>
+
+
+      <div class="add-btn-property" id="add-btn">
+        <a href="#">
+          <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" min-width="15" max-width="15"
+            fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="icon-link" id="pro-btn">
+        <a href="#product">
+          <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" min-width="15" max-width="15"
+            fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+          </svg>
+        </a>
+
+        <div class="textAlongWithSVG">Product</div>
+      </div>
+
+      <div class="icon-link" id="address-btn">
+        <a href="#address">
+          <svg class="cursor-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" min-width="15"
+            max-width="15" fill="currentColor" class="bi bi-cursor-fill" viewBox="0 0 16 16">
+            <path
+              d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z" />
+          </svg>
+        </a>
+
+        <div class="textAlongWithSVG">Address</div>
+      </div>
+
+      <div class="icon-link" id="special-btn">
+        <a href="#special">
+          <svg class="special-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" min-width="15"
+            max-width="15" fill="currentColor" class="bi bi-virus2" viewBox="0 0 16 16">
+            <path
+              d="M8 0a1 1 0 0 0-1 1v1.143c0 .557-.407 1.025-.921 1.24-.514.214-1.12.162-1.513-.231l-.809-.809a1 1 0 1 0-1.414 1.414l.809.809c.394.394.445.999.23 1.513C3.169 6.593 2.7 7 2.144 7H1a1 1 0 0 0 0 2h1.143c.557 0 1.025.407 1.24.921.214.514.163 1.12-.231 1.513l-.809.809a1 1 0 0 0 1.414 1.414l.809-.809c.394-.394.999-.445 1.513-.23.514.214.921.682.921 1.24V15a1 1 0 1 0 2 0v-1.143c0-.557.407-1.025.921-1.24.514-.214 1.12-.162 1.513.231l.809.809a1 1 0 0 0 1.414-1.414l-.809-.809c-.393-.394-.445-.999-.23-1.513.214-.514.682-.921 1.24-.921H15a1 1 0 1 0 0-2h-1.143c-.557 0-1.025-.407-1.24-.921-.214-.514-.162-1.12.231-1.513l.809-.809a1 1 0 0 0-1.414-1.414l-.809.809c-.394.393-.999.445-1.513.23-.514-.214-.92-.682-.92-1.24V1a1 1 0 0 0-1-1Zm2 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0M7 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0m1 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2m4-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+          </svg>
+        </a>
+
+        <div class="textAlongWithSVG">Special</div>
+      </div>
+    </div>
+
+    <div class="sidebar-bottom" id="bottom-btn">
+      <div class="icon-link bottom-icon">
+        <a href="#settings">
+          <div class="icon">⚙</div>
+        </a>
+      </div>
+
+      <div class="icon-link bottom-icon">
+        <a href="logout">
+          <div class="icon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" min-width="15" max-width="15"
+              fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+              <path fill-rule="evenodd"
+                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="wrap" role="main" aria-label="Three column layout">
+    <!-- Division-2: Middle column (vertically two divisions) -->
+    <section class="logo-col-divisor">
+      <div class="heading-plus-logo">
+        <div class="heading">
+          <div class="heading-name">Universal</div>
+          <div class="heading-name">Aircon</div>
+        </div>
+
+        <div class="logo-mark" aria-hidden="true"></div>
+      </div>
+
+      <div class="col-mid">
+        <div class="mid-card" aria-label="Selection column">
+          <!-- Vertical division-2: three vertical clickable boxes -->
+          <div class="mid-list" role="list" aria-label="Appliance choices">
+            <a class="mid-item" href="#" role="listitem" aria-label="Washing Machine">
+              <img src="https://via.placeholder.com/120.png?text=WM" alt="Washing Machine" />
+              <div class="meta">
+                <div class="name">Washing Machine</div>
+                <div class="sub">8.5 kg • Refurbished</div>
+              </div>
+            </a>
+
+            <a class="mid-item" href="#" role="listitem" aria-label="Fridge">
+              <img src="https://via.placeholder.com/120.png?text=Fridge" alt="Fridge" />
+              <div class="meta">
+                <div class="name">Fridge</div>
+                <div class="sub">255 L • Energy Star</div>
+              </div>
+            </a>
+
+            <a class="mid-item" href="#" role="listitem" aria-label="AC">
+              <img src="https://via.placeholder.com/120.png?text=AC" alt="AC" />
+              <div class="meta">
+                <div class="name">AC</div>
+                <div class="sub">1.5 ton • Inverter</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Division-3: Right column (double size) -->
+    <aside class="col-right">
+      <div class="form-card" aria-label="Appliance form">
+        <form [formGroup]="applianceForm" (ngSubmit)="onSubmit()" class="form-grid">
+          <section class="basic" aria-labelledby="basic-title">
+            <h3 id="basic-title">Basic</h3>
+            <div class="fields">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="Name" type="text" formControlName="name" placeholder="Appliance name" />
+              </div>
+
+              <div class="field">
+                <label for="capacity">Capacity (Kg)</label>
+                <input id="capacity" type="number" formControlName="capacity" placeholder="e.g., 8.5" />
+              </div>
+
+              <div class="field">
+                <label for="load">Load Type</label>
+                <select id="load" formControlName="load">
+                  <option value="Front">Front</option>
+                  <option value="Top">Top</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="spin">Spin (rpm)</label>
+                <input id="spin" type="number" formControlName="spin" placeholder="e.g., 1200" />
+              </div>
+
+              <div class="field">
+                <label for="notes">Notes</label>
+                <textarea id="notes" rows="2" formControlName="notes" placeholder="Short description"></textarea>
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1">
+                <label>Upload Image</label>
+                <div class="file-row">
+                  <input id="image" type="file" (change)="onFileSelected($event)" accept="image/*" />
+                  <small style="color: var(--muted)">PNG, JPG, GIF only</small>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="modes" aria-labelledby="modes-title">
+            <h3 id="modes-title">Mode &amp; Feature</h3>
+            <div class="checks">
+              <label><input type="checkbox" formControlName="digital" /> Digital
+                touch panel</label>
+              <label><input type="checkbox" formControlName="child" /> Child
+                lock</label>
+              <label><input type="checkbox" formControlName="auto" /> Auto power
+                off</label>
+              <label><input type="checkbox" formControlName="eco" /> Eco mode</label>
+              <label><input type="checkbox" formControlName="timer" /> Timer</label>
+            </div>
+          </section>
+
+          <section style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 0.6rem;
+              margin-bottom: 7px;
+            ">
+            <div class="actions" role="group" aria-label="Form actions">
+              <button type="button" class="btn-clear" (click)="onClear()">
+                CLEAR
+              </button>
+              <button type="submit" class="btn-submit">SUBMIT</button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </aside>
+  </div>
+</div>
+<!--
+<script>
+    // Basic interactivity: clear and submit handlers
+    const clearBtn = document.getElementById("clearBtn");
+    const submitBtn = document.getElementById("submitBtn");
+    const formFields = ["name", "capacity", "load", "spin", "notes", "image"];
+
+    clearBtn.addEventListener("click", () => {
+        formFields.forEach((id) => {
+            const el = document.getElementById(id);
+            if (!el) return;
+            if (el.type === "file") el.value = "";
+            else if (el.tagName === "SELECT") el.selectedIndex = 0;
+            else el.value = "";
+        });
+        document
+            .querySelectorAll('.checks input[type="checkbox"]')
+            .forEach((cb) => (cb.checked = false));
+        const digital = document.querySelector(
+            '.checks input[value="digital"]'
+        );
+        if (digital) digital.checked = true;
+    });
+
+    submitBtn.addEventListener("click", () => {
+        const name = document.getElementById("name").value.trim();
+        if (!name) {
+            alert("Please enter a name for the appliance.");
+            return;
+        }
+
+        const imageInput = document.getElementById("image");
+        if (imageInput.files.length === 0) {
+            if (!confirm("No image selected. Submit without image?")) return;
+        } else {
+            const file = imageInput.files[0];
+            if (!file.type.startsWith("image/")) {
+                alert("Please upload an image file only.");
+                return;
+            }
+        }
+
+        const data = {
+            name,
+            capacity: document.getElementById("capacity").value,
+            load: document.getElementById("load").value,
+            spin: document.getElementById("spin").value,
+            notes: document.getElementById("notes").value,
+            features: Array.from(
+                document.querySelectorAll('.checks input[type="checkbox"]:checked')
+            ).map((i) => i.value),
+        };
+        alert("Submitted: " + JSON.stringify(data, null, 2));
+    });
+</script>
+-->
+
+<!-- 
+<div class="form-card" aria-label="Appliance form">
+        <div class="form-grid">
+          <section class="basic" aria-labelledby="basic-title">
+            <h3 id="basic-title">Basic</h3>
+            <div class="fields">
+              <div class="field">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Appliance name"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="capacity">Capacity (Kg)</label>
+                <input
+                  id="capacity"
+                  type="number"
+                  min="0"
+                  placeholder="e.g., 8.5"
+                />
+              </div>
+
+              <div class="field">
+                <label for="load">Load Type</label>
+                <select id="load">
+                  <option>Front</option>
+                  <option>Top</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="spin">Spin (rpm)</label>
+                <input id="spin" type="number" placeholder="e.g., 1200" />
+              </div>
+
+              <div class="field">
+                <label for="notes">Notes</label>
+                <textarea
+                  id="notes"
+                  rows="2"
+                  placeholder="Short description"
+                ></textarea>
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1">
+                <label>Upload Image</label>
+                <div class="file-row">
+                  <input
+                    id="image"
+                    type="file"
+                    accept="image/*"
+                    aria-label="Upload image (images only)"
+                  />
+                  <small style="color: var(--muted)">PNG, JPG, GIF only</small>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="modes" aria-labelledby="modes-title">
+            <h3 id="modes-title">Mode &amp; Feature</h3>
+            <div class="checks">
+              <label
+                ><input
+                  type="checkbox"
+                  name="feature"
+                  value="digital"
+                  checked
+                />
+                Digital touch panel</label
+              >
+              <label
+                ><input type="checkbox" name="feature" value="child" /> Child
+                lock</label
+              >
+              <label
+                ><input type="checkbox" name="feature" value="auto" /> Auto
+                power off</label
+              >
+              <label
+                ><input type="checkbox" name="feature" value="eco" /> Eco
+                mode</label
+              >
+              <label
+                ><input type="checkbox" name="feature" value="timer" />
+                Timer</label
+              >
+            </div>
+          </section>
+
+          <section
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 0.6rem;
+              margin-bottom: 7px;
+            "
+          >
+            <div class="actions" role="group" aria-label="Form actions">
+              <button type="button" class="btn-clear" id="clearBtn">
+                CLEAR
+              </button>
+              <button type="button" class="btn-submit" id="submitBtn">
+                SUBMIT
+              </button>
+            </div>
+          </section>
+        </div>
+      </div> -->

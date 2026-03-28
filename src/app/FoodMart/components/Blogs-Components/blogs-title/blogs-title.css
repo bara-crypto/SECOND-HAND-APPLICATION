@@ -1,0 +1,7 @@
+.row .section-header .section-title{
+    
+    font-family: var(--heading-font);
+    color: var(--dark-color);
+    font-weight: 700;
+
+}

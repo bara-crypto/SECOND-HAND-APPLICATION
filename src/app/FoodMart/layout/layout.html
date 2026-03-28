@@ -1,0 +1,212 @@
+@if (loading) 
+{
+    <div class="preloader-wrapper" >
+        <div class="preloader">
+        </div>
+    </div>
+}
+
+<header>
+    <app-header></app-header>
+    <div [style.width]="spaceByWidthXHeight.width" [style.height]="spaceByWidthXHeight.height"></div>
+    <app-menu-bar></app-menu-bar>
+</header>
+
+<section class="py-3" style="background-image: url('assets/images/background-pattern.jpg');background-repeat: no-repeat;background-size: cover;"> 
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+            <div class="banner-blocks">
+              <div class="banner-ad large bg-info block-1">
+                <div class="swiper main-swiper">
+                  <div class="swiper-wrapper">
+                    <!--
+                              <div class="swiper-slide">
+                                <div class="row banner-content p-5">
+                                  <div class="content-wrapper col-md-7">
+                                    <div class="categories my-3">100% natural</div>
+                                    <h3 class="display-4">Fresh Smoothie & Summer Juice</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+                                    <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1 px-4 py-3 mt-3">Shop Now</a>
+                                  </div>
+                                  <div class="img-wrapper col-md-5">
+                                    <img src="assets/images/product-thumb-1.png" class="img-fluid">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="row banner-content p-5">
+                                  <div class="content-wrapper col-md-7">
+                                    <div class="categories mb-3 pb-3">100% natural</div>
+                                    <h3 class="banner-title">Fresh Smoothie & Summer Juice</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+                                    <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Collection</a>
+                                  </div>
+                                  <div class="img-wrapper col-md-5">
+                                    <img src="assets/images/product-thumb-1.png" class="img-fluid">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="swiper-slide">
+                                <div class="row banner-content p-5">
+                                  <div class="content-wrapper col-md-7">
+                                    <div class="categories mb-3 pb-3">100% natural</div>
+                                    <h3 class="banner-title">Heinz Tomato Ketchup</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+                                    <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Collection</a>
+                                  </div>
+                                  <div class="img-wrapper col-md-5">
+                                    <img src="assets/images/product-thumb-2.png" class="img-fluid">
+                                  </div>
+                                </div>
+                              </div>
+                              -->
+                    <app-main-bill-board
+                      class="swiper-slide"
+                      [Top]="Top"
+                      [Center]="Center"
+                      [epCenter]="epCenter"
+                      [BtnContent]="BtnContent"
+                    ></app-main-bill-board>
+                    <app-main-bill-board
+                      class="swiper-slide"
+                      [Top]="Top"
+                      [Center]="Center"
+                      [epCenter]="epCenter"
+                      [BtnContent]="BtnContent"
+                    ></app-main-bill-board>
+                    <app-main-bill-board
+                      class="swiper-slide"
+                      [Top]="Top"
+                      [Center]="Center"
+                      [epCenter]="epCenter"
+                      [BtnContent]="BtnContent"
+                    ></app-main-bill-board>
+                  </div>
+                
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            
+              <div
+                class="banner-ad bg-success-subtle block-2"
+                style="
+                  background: url(&quot;assets/images/ad-image-1.png&quot;) no-repeat;
+                  background-position: right bottom;
+                "
+              >
+                <app-bill-board
+                  [top]="BillBoardMap.top"
+                  [title]="BillBoardMap.title"
+                  [anchor]="BillBoardMap.anchor"
+                ></app-bill-board>
+              </div>
+              <div
+                class="banner-ad bg-danger block-3"
+                style="
+                  background: url(&quot;assets/images/ad-image-2.png&quot;) no-repeat;
+                  background-position: right bottom;
+                "
+              >
+                <app-bill-board
+                  [top]="BillBoardMap.top"
+                  [title]="BillBoardMap.title"
+                  [anchor]="BillBoardMap.anchor"
+                ></app-bill-board>
+              </div>
+
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="py-5 overflow-hidden pt-1 pb-1">
+    <div class="container-fluid container-fluid-size-fix">
+      <app-category-layout class="row"></app-category-layout>
+      <app-category-items class="row"></app-category-items>
+    </div>
+</section>
+
+
+<section class="py-5 pt-1 pb-1">
+  <div class="container-fluid container-fluid-size-fix">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="bootstrap-tabs product-tabs">
+          <app-display-title class="row"></app-display-title>
+          <app-display-content [items]="items"></app-display-content>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 overflow-hidden">
+  <div class="container-fluid container-fluid-size-fix">
+    <app-category-layout class="row"></app-category-layout>
+    <app-appliance-category-items class="row" [products]="products"></app-appliance-category-items>
+  </div>
+</section>  
+
+
+<section class="py-5">
+  <div class="container-fluid container-fluid-size-fix">
+    <div class="row CallConnection-Row">
+       <app-call-connection-card [CallConnection]="CallCategory[0]" class="col-md-6"></app-call-connection-card> 
+       <app-call-connection-card [CallConnection]="CallCategory[1]" class="col-md-6"></app-call-connection-card>
+    </div>
+  </div>
+</section>
+
+
+<section id="latest-blog" class="py-5">
+      <div class="container-fluid">
+        <div class="row">
+          @for(blog of Blogs; track blog.name)
+          {
+            <app-blogs-titles [blogs]="blog" class="col-md-4"></app-blogs-titles>
+          }
+        </div>
+      </div>
+</section>
+
+<section class="py-5 my-5">
+    <div class="container-fluid">
+      <div class="bg-warning py-5 rounded-5" style="background-image: url('assets/images/bg-pattern-2.png') no-repeat;">
+          <div class="container">
+            <app-mobile-app-card class="row"></app-mobile-app-card>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="py-5">
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5">
+      @for(service of ServiceCard; track service.title; let i = $index)
+      {
+        <app-service-given-card [ServiceGivenCard]="service">
+        </app-service-given-card>
+      }
+    </div>
+  </div>
+</section>
+
+<footer class="py-5" style="background-image: url('assets/images/appliance-2.png'); background-position: left; background-size: contain; background-repeat: no-repeat;">
+  <div class="container-fluid">
+    <div class="row" >
+      <app-footer-components></app-footer-components>  
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+ 
+

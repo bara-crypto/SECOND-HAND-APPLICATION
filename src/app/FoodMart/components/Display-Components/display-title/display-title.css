@@ -1,0 +1,45 @@
+:host
+{
+    --heading-font: "Nunito", sans-serif;
+    --font-weight: 700
+}
+
+.items-title .h3
+{
+    font-family: var(--heading-font);
+    font-weight: var(bold);
+    color: var(--dark-color);
+
+}
+
+.Navigation-Link .nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, opacity .15s ease-in-out; 
+}
+
+.Navigation-Link .nav-tabs .nav-link {
+    margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
+    border: var(--bs-nav-tabs-border-width) solid transparent;
+    opacity: 0.5;
+    border-top-left-radius: var(--bs-nav-tabs-border-radius);
+    border-top-right-radius: var(--bs-nav-tabs-border-radius);
+    border-bottom-left-radius: var(--bs-nav-tabs-border-radius);
+    border-bottom-right-radius: var(--bs-nav-tabs-border-radius);
+}
+
+.Navigation-Link .nav-tabs .nav-link.active, .Navigation-Link .nav-tabs .nav-item.show .nav-link {
+    /* border-bottom: 3px solid var(--accent-color); */
+    color: var(--dark-color);
+    background-color: var(--bs-nav-tabs-link-active-bg);
+    /* box-shadow: 0 1px 1px var(--accent-color), 0 2px 2px var(--accent-color),  0 0px 0px var(--accent-color), 0 2px 2px var(--accent-color); */
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+    /* border: none; */
+    opacity: 1;
+}

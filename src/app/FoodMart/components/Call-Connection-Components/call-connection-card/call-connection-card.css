@@ -1,0 +1,27 @@
+.banner-ad {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.banner-ad .banner-content .categories {
+    font-family: 'Garamond';
+    font-size: 37px;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb),var(--bs-text-opacity))!important;
+}
+
+.banner-ad .banner-content .banner-title {
+    letter-spacing: 0.02em;
+    font-size: 33px;
+    font-family: var(--heading-font);
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+
