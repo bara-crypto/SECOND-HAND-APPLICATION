@@ -1,59 +1,104 @@
-# Project2
+ReAppliance: Second-Hand Appliances Marketplace
+A robust, full-stack MEAN application designed for buying and selling second-hand home appliances. The platform features an advanced administrative workflow allowing remote inventory management, dynamic pricing controls, and cloud-hosted appliance imagery.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+🚀 Features
+Remote Admin Control: Admins can securely log in from anywhere to upload appliance listings, attach product images, and dynamically update pricing in real-time.
 
-## Development server
+Product Catalog: Users can browse, filter, and search through available second-hand appliances (e.g., refrigerators, washing machines, microwaves).
 
-To start a local development server, run:
+Dynamic Image Hosting: Seamless image handling for appliance listings, served directly to the Angular frontend.
 
-```bash
+Secure Architecture: JWT-based authentication protecting admin routes and sensitive database operations.
+
+🛠️ Tech Stack & Architecture
+The application is split into two main decoupled layers (Frontend and Backend):
+
+Frontend (frontend/)
+Framework: Angular (v16+)
+
+Styling: Bootstrap / Tailwind CSS (Responsive layout for mobile and desktop)
+
+State Management: Reactive Forms and RxJS Observables for smooth data handling.
+
+Backend & Database (backend/)
+Runtime Environment: Node.js
+
+Framework: Express.js (RESTful API architecture)
+
+Database: MongoDB (NoSQL database utilizing Mongoose schemas for optimal appliance data structuring)
+
+Image Storage: Multer middleware for handling multi-part form data / cloud storage integrations (e.g., Cloudinary or local uploads).
+
+📁 File Structure
+Plaintext
+reappliance-workspace/
+├── backend/                  # Node/Express API, Models, Controllers, and Database configs
+│   ├── config/               # MongoDB connection string setup
+│   ├── controllers/          # Admin and Product business logic
+│   ├── models/               # MongoDB Mongoose schemas (Appliance, User)
+│   ├── routes/               # Express API endpoints
+│   └── server.js             # Entry point
+├── frontend/                 # Angular SPA
+│   ├── src/app/components/   # Navbar, Product Grid, Admin Dashboard, Login
+│   ├── src/app/services/     # API Client services (Auth, Appliance fetch)
+│   └── src/index.html
+└── README.md                 # Project documentation
+⚙️ Setup & Installation
+Prerequisites
+Make sure you have the following installed globally on your machine:
+
+Node.js (v18+ recommended)
+
+Angular CLI (npm install -g @angular/cli)
+
+MongoDB (Local Community Server or a MongoDB Atlas Cloud URI)
+
+1. Clone & Set Up the Backend
+Navigate to the backend folder, install dependencies, and configure environment variables.
+
+Bash
+cd backend
+npm install
+Create a .env file inside the backend directory:
+
+Code snippet
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_super_secure_jwt_secret_key
+Start the backend development server:
+
+Bash
+npm start
+The API should now be running smoothly at http://localhost:5000.
+
+2. Set Up the Frontend
+Open a new terminal window, navigate to the frontend folder, and install dependencies.
+
+Bash
+cd frontend
+npm install
+Update your Angular environment file (src/environments/environment.ts) to point to your backend API:
+
+TypeScript
+export const environment = {
+  production: false,
+  apiUrl: 'http://localhost:5000/api'
+};
+Launch the Angular local development application server:
+
+Bash
 ng serve
-```
+Open http://localhost:4200 in your browser to interact with the marketplace!
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🔐 Administrative Workflow
+To access remote management features:
 
-## Code scaffolding
+Register/Log in via the Admin route (protected by backend middleware).
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Navigate to the Admin Dashboard.
 
-```bash
-ng generate component component-name
-```
+Fill out the appliance details (Name, Category, Condition, and Description).
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Input the fixed price and attach an image file.
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Submit to instantly stream the new listing to the public MongoDB-powered client feed.
